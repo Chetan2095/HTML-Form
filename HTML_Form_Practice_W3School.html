@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form's elements & attributes</title>
+    <style>
+        div{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action=""/action_page.php"" target="_blank" method="get">
+        <fieldset>
+            <legend>Fieldset Title</legend>
+            
+            <div>
+                <label for="firstname">First Name</label>
+                <input type="text" name="" id="firstname" required><br>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="" id="lastname"><br>
+                <label for="email">Enter Your Email ID</label>
+                <input type="email" name="" id="email">
+            </div> <br>
+            <div>
+                <label for="username">User Name</label>
+                <input type="text" id="username"><br>
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd"> <br> 
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+            <div>
+                <h3>Choose Your Favourit Language</h3>
+                <input type="radio" value="HTML" id="html" name="fav_language" disabled>
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="js" name="fav_language" checked>
+                <label for="js">JavaScript</label>
+                <input type="submit" value="Submit">
+            </div>
+            <div>
+                <h2>Input type 'checkbox'</h2>
+                <p>Select the relevent options</p>
+                <input type="checkbox" id="bike" name="vehicle1">
+                <label for="bike">I have a Bike</label><br>
+                <input type="checkbox" id="car" name="vehicle1" checked>
+                <label for="car">I have a Car</label><br>
+                <input type="checkbox" id="bus" name="vehicle1">
+                <label for="bus">I have a Bus</label><br>
+                <input type="checkbox" id="truck" name="vehicle1">
+                <label for="truck">I have a Truck</label><br>
+                <input type="submit" value="Submit">
+            </div>
+            <div>
+                <h2>Input type Button</h2>
+                <input type="button" value="Click Me!" onclick=""><br><br>
+                <label for="color">Select a Color</label>
+                <input type="color" id="color"> 
+            </div>
+            <div>
+                <label for="dob">What is your Birth date :</label>
+                <input type="date" id="dob"><br>
+                <label for="datemax">Enter Date before 12 Dec 2022</label>
+                <input type="date" id="datemax" max="2022-12-12"><br>
+                <label for="datemin">Enter Date after 20 Sep 1995</label>
+                <input type="date" id="datemin" min="1995-09-20"><br>
+                <label for="dob_time">Date of Birth and Time</label>
+                <input type="datetime-local" id="dob_time"><br>
+                <input type="month"><br>
+                <input type="number" min="1" max="7">
+            </div>
+            
+            <div>
+                <textarea name="message" id="" cols="50" rows="10">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quaerat beatae voluptates 
+                    dolore eveniet, exercitationem veniam cupiditate voluptatem et fugiat.
+                </textarea>
+            </div>
+            <div>     
+                <textarea name="message" id="" style="width: 500px; height: 100px;">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quaerat beatae voluptates 
+                    dolore eveniet, exercitationem veniam cupiditate voluptatem et fugiat.
+                </textarea>
+            </div> 
+            <div>
+                <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+            </div>
+            <div>
+                <label for="">input type "button":</label>
+                <input type="button" value="Click Me!">
+            </div>
+            <div>
+                <label for="image">Insert image:</label>
+                <input type="image" src="data:image/jpeg;base64,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" alt="" width="" height="">
+           </div>
+           <div>
+            <label for="file">Select a File</label>
+            <input type="file">
+           </div>
+           <div>
+            <label for="volume">Volume(between 0 to 100):</label>
+            <input type="range" id="volume" min="0" max="100">
+            <input type="submit" value="Submit">
+           </div>
+           <div>
+            <label for="search">Google Search</label>
+            <input type="search" id="search">
+            <input type="submit">
+           </div>
+           <div>
+            <label for="phone">Enter Telephone Number:</label>
+            <input type="tel" id="phone" placeholder="+91-" pattern="">
+           </div>
+           <div>
+            <label for="time">Select a Time:</label>
+            <input type="time" id="time">
+           </div>
+           <div>
+            <label for="url">Enter URL of LinkedIn profile:</label>
+            <input type="url" id="url" placeholder="https://www.xyz.com">
+            <input type="submit" value="Submit">
+           </div>
+           <div>
+            <label for="week">Select the week:</label>
+            <input type="week" id="week">
+           </div>
+           <div>
+            <h2>The select element</h2>
+            <label for="cars">Choose a car</label>
+            <select name="cars" id="cars">
+                <!-- we can add size="" and multiple attribute in <select> tag -->
+                <option value="volvo">Volvo</option>
+                <option value="volvo">BMW</option>
+                <option value="volvo">KIA</option>
+                <option value="volvo">Creta</option>
+                <option value="volvo" selected>Rang Rover</option>
+            </select>
+            <input type="submit" name="" id="">
+        </div>
+        <div>
+            <h2>The optgroup element</h2>
+            <!-- <optgroup> is used to group related options in dropdown list-->
+            <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars">
+              <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+              </optgroup>
+              <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </optgroup>
+            </select>
+          </div>
+            <div>
+                <!-- <datalist> element -->
+                <h2>The datalist Element</h2>
+                <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+                <input list="browsers" name="">
+                <datalist id="browsers"> 
+                    <option value="Chrome">
+                    <option value="Safari">
+                    <option value="Firefox">
+                    <option value="Opera">
+                    <option value="Internet Explorer">
+                </datalist>
+                <input type="submit">      
+            </div>
+            <div>
+                <!-- <output> elemeny -->
+            </div>
+            
+        </fieldset>
+
+    </form>
+</body>
+</html>
+<!-- I have also added this pahe on GitHub -->

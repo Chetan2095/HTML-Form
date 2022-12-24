@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input attribute</title>
+    <style>
+        div{
+            margin: 10px;
+            padding: 5px;
+            color: rgb(9, 0, 128);
+        }
+    </style>
+</head>
+<body>
+    <form action="" target="_blank" method="post" autocomplete="on">     <!-- 'autocomplete'-->
+        <div>
+            <!-- 'value' attribute -->
+            <label for="firstName">First Name</label>
+            <input type="text" name="" id="firstName" value="Chetan">
+        </div>
+        <div>
+            <!-- 'placeholder' attribute -->
+            <label for="lastName">Last Name</label>
+            <input type="text" name="" id="lastName" placeholder="Enter Lastname">
+        </div>
+        <div>
+            <!-- 'disabled' attributr -->
+            <label for="number">What's App Number</label>
+            <input type="tel" name="" id="number" disabled>
+        </div>
+        <div>
+            <!-- 'readonly' attribute -->
+            <label for="amt">Amount Payable</label>
+            <input type="number" name="" id="" value="3000" readonly>
+        </div>
+        <div>
+            <!-- 'max' 'min' 'required' attribute -->
+            <label for="quantity">Quantity (between 5 to 10)</label>
+            <input type="number" name="quantity" id="quantity" min="5" max="10"> <br>
+            <label for="rang">Range (between 1 to 100)</label>
+            <input type="range" name="range" id="range" min="1" max="100"><br>
+            <label for="date">Date(between 20/9/95 to 23/10/2022)</label>
+            <input type="date" name="date" id="date" min="1995-09-20" max="2022-12-23"><br>
+            <label for="month">Month(between Feb to June)</label>
+            <input type="month" name="month" id="month" min="2022-02" max="2022-06"><br>
+            <label for="time">Choose a time for meeting</label>
+            <input type="time" name="time" id="time" min="09:00:00" max="18:00:00" required>
+            <small>Office hours are 9am to 6pm</small><br>
+            <label for="week">Week (Beteen 10 to 15 in 2022)</label>
+            <input type="week" name="week" id="Week min="2022-W10" max="2022-W15">
+        </div>
+        <div>
+            <label for="files">Select Files:</label>
+            <input type="file" name="files" id="files" multiple><br>
+            <small>To select multiple files, hold down the CTRLCommand or SHIFT key while selecting.</small>
+        </div>
+        <div>
+            <!-- 'pattern' 'title' 'placeholder' attribute -->
+            <label for="phone">Enter a phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91-98756-54321" pattern="+91-[0-9]{5}-[0-9]{5}" title="ten digit mobile number with contry code +91">
+        </div>
+        <div>
+            <!-- 'step' attribute -->
+            <label for="points">Points (in intervals of 3):</label>
+            <input type="number" name="points" id="points" step="3"><br>
+            <label for="rang">Range (in intervals of 5)</label>
+            <input type="range" name="range" id="range" step="5" min="0" max="20">
+        </div>
+        <div>
+            <!-- 'autofocus' attribute -->
+            <label for="firstName">First Name</label>
+            <input type="text" name="" id="firstName" autofocus>
+        </div>
+        <div>
+            <!-- 'list' attribute -->
+            <label for="list">List of browsers</label>
+            <input type="" name="browsers" id="list" list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </div>
+    </form>
+</body>
+</html>
